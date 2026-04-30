@@ -1,3 +1,4 @@
+create database if not exists demo;
 use demo;
 -- 签发方表
 CREATE TABLE if not exists issuer

@@ -21,9 +21,7 @@ services:
       - "3306:3306"
 
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile.app
+    image: ibingbo/ilicense-lite-app:latest
     container_name: ilicense-app
     restart: unless-stopped
     environment:
@@ -41,9 +39,7 @@ services:
       - "8080:8080"
 
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile.web
+    image: ibingbo/ilicense-lite-web:latest
     container_name: ilicense-web
     restart: unless-stopped
     environment:
